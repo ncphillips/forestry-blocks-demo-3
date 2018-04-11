@@ -1,0 +1,24 @@
+---
+hide_body: true
+fields:
+- type: text
+  name: headline
+  label: Headline
+- type: text
+  name: subhead
+  label: Subhead
+- type: file
+  name: bgImage
+  label: Background Image
+- type: select
+  name: textColor
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - Light
+    - Dark
+  label: Text Color
+  description: Change text color based on background
+  default: Light

@@ -1,0 +1,11 @@
+<div
+{{ safeHTMLAttr (printf "class=%q" (printf "sawmill-hero sawmill-hero--text-%s" (lower .Block.textColor))) }}
+{{ with .Block.bgImage }}
+{{ safeHTMLAttr (printf "style=%q" (printf "background-image: url(%s)" .)) }}
+{{ end }}
+>
+    <h1>{{ .Block.headline }}</h1>
+    {{ with .Block.subhead }}
+    <small class="subhead">{{ . }}</small>
+    {{ end }}
+</div>

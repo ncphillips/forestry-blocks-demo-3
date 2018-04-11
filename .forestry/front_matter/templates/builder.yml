@@ -1,0 +1,22 @@
+---
+pages:
+  - post/demo.md
+hide_body: true
+fields:
+- type: text
+  hidden: true
+  label: Layout
+  name: layout
+  description: ''
+  default: composable
+- type: matrix
+  label: Blocks
+  name: blocks
+  template_types:
+  - pull-quote
+  - category-feed
+  - body-copy-w-image
+  - body-copy
+  - call-to-action
+  - hero
+  - section-heading

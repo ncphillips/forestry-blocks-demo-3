@@ -1,0 +1,8 @@
+---
+hide_body: true
+fields:
+- type: text
+  name: heading
+  label: Heading
+  config:
+    required: true

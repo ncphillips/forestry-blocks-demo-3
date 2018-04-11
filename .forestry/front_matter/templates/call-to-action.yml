@@ -1,0 +1,14 @@
+---
+hide_body: true
+fields:
+- type: text
+  name: url
+  label: URL
+  config:
+    required: true
+- type: text
+  name: text
+  label: Text
+  description: Link Text
+  config:
+    required: true

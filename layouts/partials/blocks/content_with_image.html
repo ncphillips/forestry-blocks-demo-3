@@ -1,0 +1,17 @@
+<div class="sawmill-body">
+    <div class="sawmill-body__image
+    {{ if and (isset .Block "imageAlignment") (eq (lower .Block.imageAlignment) "right") }}
+    sawmill-body__image--align-right
+    {{ else if and (isset .Block "imageAlignment") (eq (lower .Block.imageAlignment) "left") }}
+    sawmill-body__image--align-left
+    {{ else }}
+    sawmill-body__image--full-width
+    {{ end }}">
+     <img src="{{ .Block.image }}" />
+    </div>
+    {{ if and (isset .Block "contentType") (eq .Block.contentType "HTML") }}
+    {{ safeHTML .Block.content }}
+    {{ else }}
+    {{ markdownify .Block.content }}
+    {{ end }}
+</div>

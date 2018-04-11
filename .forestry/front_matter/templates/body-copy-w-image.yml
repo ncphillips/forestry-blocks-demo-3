@@ -1,0 +1,32 @@
+---
+hide_body: true
+fields:
+- type: textarea
+  label: Content
+  name: content
+  config:
+    wysiwyg: true
+- type: select
+  name: contentType
+  config:
+    source:
+      type: simple
+    options:
+    - Markdown
+    - HTML
+  label: Content Type
+  default: Markdown
+- type: file
+  name: image
+  label: Image
+- type: select
+  name: imageAlignment
+  config:
+    source:
+      type: simple
+    options:
+    - Left
+    - Right
+    - Full Width
+  label: Image Alignment
+  default: Full Width

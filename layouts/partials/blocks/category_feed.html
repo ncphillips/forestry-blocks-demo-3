@@ -1,0 +1,23 @@
+<div class="sawmill-categorylist">
+    {{ with .Block.title }}
+    <h2 class="sawmill-categorylist__header">{{ . }}</h2>
+    {{ else }}
+    <h2 class="sawmill-categorylist__header">{{ .Block.category }}</h2>
+    {{ end }}
+    <div class="sawmill-categorylist__pages">
+        {{ range .Pages }}
+        <div class="sawmill-categorylist__page">
+            <header class="sawmill-categorylist__page__header">
+                <h3 class="sawmill-categorylist__page__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+                <time class="sawmill-categorylist__page__pubdate">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
+            </header>
+            {{ with .Description }}
+            <div class="sawmill-categorylist__page__description">{{ . }}</div>
+            {{ end }}
+            <footer class="sawmill-categorylist__page__footer">
+                <a class="sawmill-categorylist__page__permalink" href="{{ .Permalink }}">View Full Post</a>
+            </footer>
+        </div>
+        {{ end }}
+    </div>
+</div>

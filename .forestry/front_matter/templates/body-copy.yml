@@ -1,0 +1,18 @@
+---
+hide_body: true
+fields:
+- type: textarea
+  name: content
+  label: Content
+  config:
+    wysiwyg: true
+- type: select
+  name: contentType
+  config:
+    source:
+      type: simple
+    options:
+    - Markdown
+    - HTML
+  label: Content Type
+  default: Markdown
