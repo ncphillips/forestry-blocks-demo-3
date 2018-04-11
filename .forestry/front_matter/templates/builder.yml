@@ -1,6 +1,6 @@
 ---
 pages:
-  - post/demo.md
+- post/demo.md
 hide_body: true
 fields:
 - type: text
