@@ -14,7 +14,7 @@
     {{ if eq .template "body-copy-w-image" }}{{ partial "blocks/content_with_image.html" (dict "Block" .) }} {{end}}
     {{ if eq .template "section-heading" }}{{ partial "blocks/heading.html" (dict "Block" .) }} {{end}}
     {{ if eq .template "hero" }}{{ partial "blocks/hero.html" (dict "Block" .) }} {{end}}
-    {{ if eq .template "image_carousel" }}{{ partial "blocks/image_carousel.html" (dict "Block" .) }} {{end}}
+    {{ if eq .template "pull-quote" }}{{ partial "blocks/pull_quote.html" (dict "Block" .) }} {{end}}
 
 {{ end }}
 {{ if .Site.Params.socialShare }}

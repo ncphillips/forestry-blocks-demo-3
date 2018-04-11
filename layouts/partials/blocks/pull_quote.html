@@ -1,0 +1,8 @@
+<blockquote class="sawmill-pullquote">
+    {{ .Block.quote }}
+</blockquote>
+{{ with .Block.attribution }}
+<div class="sawmill-pullquote__attribution">
+    &mdash;{{ . }}
+</div>
+{{ end }}
