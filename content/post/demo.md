@@ -16,13 +16,13 @@ heading = "View some more things"
 template = "section-heading"
 [[blocks]]
 category = "Development"
-title = "Posts for Developers"
 numItems = 3
 template = "category-feed"
+title = "Posts for Developers"
 [[blocks]]
 content = "Some more body copy. We have an image now!"
 contentType = "Markdown"
-image = "/uploads/2018/04/06/testimg.png"
+image = "/uploads/2018/04/11/hugo_gopher.png"
 imageAlignment = "Right"
 template = "body-copy-w-image"
 [[blocks]]
