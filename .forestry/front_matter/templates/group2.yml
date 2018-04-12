@@ -1,4 +1,6 @@
 ---
+pages:
+- post/group3.md
 hide_body: false
 fields:
 - type: field_group_list
