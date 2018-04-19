@@ -2,6 +2,7 @@
 pages:
 - post/demo.md
 hide_body: true
+is_partial: false
 fields:
 - type: text
   hidden: true
@@ -9,7 +10,7 @@ fields:
   name: layout
   description: ''
   default: composable
-- type: matrix
+- type: boolean
   label: Blocks
   name: blocks
   template_types:

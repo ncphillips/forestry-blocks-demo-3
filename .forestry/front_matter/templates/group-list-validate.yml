@@ -1,8 +1,9 @@
 ---
 pages:
-- post/group-list-2.md
 - post/group-list-example.md
+- post/group-list-2.md
 hide_body: false
+is_partial: false
 fields:
 - type: field_group_list
   name: group
