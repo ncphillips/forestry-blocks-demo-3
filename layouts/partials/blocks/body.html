@@ -1,7 +1,0 @@
-<div class="sawmill-body">
-    {{ if and (isset .Block "contentType") (eq .Block.contentType "HTML") }}
-    {{ safeHTML .Block.content }}
-    {{ else }}
-    {{ markdownify .Block.content }}
-    {{ end }}
-</div>
